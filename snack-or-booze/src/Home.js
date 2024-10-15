@@ -1,7 +1,14 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 
-function Home({snacks, drinks}) {
+/** Homepage
+ *
+ * Props:
+ * - snacks: list of snacks
+ * - drinks: same, but drinks
+ */
+
+function Home({ snacks, drinks }) {
   return (
     <section className="col-md-8">
       <Card>
@@ -12,7 +19,7 @@ function Home({snacks, drinks}) {
             </h3>
           </CardTitle>
           <CardText>
-            We have {snacks.length} snacks and {drinks.length} drinks available for you!
+            Our menu includes {snacks.length} snacks and {drinks.length} drinks.
           </CardText>
         </CardBody>
       </Card>
